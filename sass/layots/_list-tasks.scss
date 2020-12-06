@@ -1,0 +1,37 @@
+.list-tasks {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  padding-left: 0px;
+}
+.list-container {
+  display: inline-block;
+
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
+}
+.list {
+  margin-bottom: 30px;
+  display: block;
+  //   width: 270px;
+}
+.block-svg-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+  background-color: $bg-icon;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.list-svg-icon {
+  display: block;
+
+  background-color: $bg-icon;
+  border-radius: 4px;
+}

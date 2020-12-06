@@ -1,0 +1,146 @@
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.address {
+  font-style: normal;
+  padding-top: 0px;
+}
+.footer-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  line-height: 2;
+}
+.adress-footerone {
+  display: inline-block;
+  color: $white;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.adress-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.offers {
+  margin-top: 0;
+  margin-right: 93px;
+  margin-bottom: 0;
+  margin-left: 70px;
+}
+
+.offers-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  color: $white;
+  margin-top: 0px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+.offers-list {
+  display: flex;
+  margin: 0px;
+  padding: 0;
+}
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  fill: $white;
+}
+.footer-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+.social-footer-links:not(:last-child) {
+  margin-right: 10px;
+}
+
+.wrap-form {
+  display: flex;
+  align-items: center;
+}
+.form-footer {
+  margin-right: 12px;
+}
+.input-footer {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: $bg-footer;
+  border-radius: 4px;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+.footer-container {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+.button-footer {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: $accent-color;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: $white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    margin-left: auto;
+    margin-right: 0;
+    background-image: url(../img/gitignore.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

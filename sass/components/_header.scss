@@ -1,0 +1,117 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.container-main-nav {
+  display: flex;
+}
+.container-list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+.list-nav {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 93px;
+  display: flex;
+  padding: 0px;
+}
+.list-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+a.font-style {
+  font-family: "Roboto", sans-serif;
+}
+.excretion {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $title-text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.excretion.current:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  left: 0;
+  bottom: 0px;
+  background-color: $accent-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-header {
+  display: flex;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.address-header .item-address:not(:last-child) {
+  margin-right: 50px;
+}
+.adress-excretion {
+  display: flex;
+  align-items: center;
+  color: $secondary-text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.icon-envelope-hover {
+  margin-right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .adress-excretion:hover &,
+  .adress-excretion:focus & {
+    fill: $accent-color;
+  }
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .adress-excretion:hover &,
+  .adress-excretion:focus & {
+    fill: $accent-color;
+  }
+}

@@ -1,0 +1,104 @@
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 80px;
+}
+p {
+  color: $secondary-text;
+  font-weight: 400;
+}
+h1,
+h2,
+h3 {
+  color: $title-text;
+}
+a {
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  min-height: 80px;
+  top: 0px;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  z-index: 2;
+}
+footer {
+  background-color: $bg-footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  display: block;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+   @media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+   @media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.font-text-one {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 696px;
+
+  padding-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: $white;
+}
+.font-text-three {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.font-text-two {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.paragraph {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
