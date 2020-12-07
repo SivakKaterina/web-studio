@@ -43,12 +43,29 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container .container {
+    width: 1200px;
+  }
 }
 
 .font-text-one {
@@ -327,19 +344,23 @@ a.font-style {
 
 .list-container {
   display: inline-block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 0px;
   margin-left: 0px;
   margin-bottom: 0px;
   padding: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .list-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .list {
-  display: block;
-  width: 270px;
   margin-bottom: 30px;
+  display: block;
 }
 
 .block-svg-item {

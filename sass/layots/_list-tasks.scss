@@ -15,9 +15,18 @@
   }
 }
 .list {
-  margin-bottom: 30px;
-  display: block;
-  //   width: 270px;
+  text-align: center;
+  width: 100%;
+  @media screen and(min-width:768px) {
+    width: 270px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-bottom: 30px;
+    display: block;
+  }
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
 }
 .block-svg-item {
   display: flex;
