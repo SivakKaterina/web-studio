@@ -1,6 +1,24 @@
 .footer {
-  display: flex;
-  align-items: baseline;
+  padding: 60px 15px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-start;
+    text-align: start;
+    width: 1200px;
+  }
+}
+.footer-section {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.footer-adress {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .address {
@@ -47,9 +65,12 @@
 
 .offers {
   margin-top: 0;
-  margin-right: 93px;
-  margin-bottom: 0;
-  margin-left: 70px;
+  margin-bottom: 60px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    margin-left: 70px;
+  }
 }
 
 .offers-title {
@@ -64,6 +85,7 @@
 }
 .offers-list {
   display: flex;
+  justify-content: center;
   margin: 0px;
   padding: 0;
 }
@@ -88,30 +110,53 @@
 .social-footer-links:not(:last-child) {
   margin-right: 10px;
 }
-
 .wrap-form {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 .form-footer {
-  margin-right: 12px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
 .input-footer {
-  width: 358px;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: $bg-footer;
   border-radius: 4px;
-  padding-left: 16px;
+  padding: 15px 16px;
+  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.6);
   outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  @media (min-width: 768px) {
+    display: block;
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    padding-left: 16px;
+  }
 }
-
 .footer-container {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
+  margin-top: 12px;
   margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
 }
 .button-footer {
   display: inline-flex;

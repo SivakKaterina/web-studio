@@ -1,26 +1,38 @@
 .company {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .list-company {
   display: flex;
-  margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   padding: 0px;
-}
-.list-border:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 .link-befor {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
+  margin-bottom: 30px;
   border: 1px solid $icons-color;
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
   &:hover {
     border: 1px solid $accent-color;
   }

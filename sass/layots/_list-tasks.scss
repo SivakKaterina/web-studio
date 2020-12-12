@@ -1,38 +1,41 @@
 .list-tasks {
-  padding-bottom: 94px;
-  padding-top: 94px;
-  padding-left: 0px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 .list-container {
-  display: inline-block;
-
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
-  @media screen and(min-width:768px) {
+  padding-left: 0;
+  margin: 0;
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .list {
   text-align: center;
   width: 100%;
-  @media screen and(min-width:768px) {
-    width: 270px;
-    margin-left: 15px;
-    margin-bottom: 15px;
+  &:not(:last-child) {
     margin-bottom: 30px;
-    display: block;
   }
-  @media screen and (min-width: 480px) {
-    max-width: 450px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+    }
   }
 }
 .block-svg-item {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  width: 100%;
   height: 120px;
   background-color: $bg-icon;
   border-radius: 4px;
