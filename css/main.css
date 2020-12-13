@@ -253,10 +253,10 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu-container {
-    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+    padding: 60px;
   }
   .menu-container.is-open {
     display: block;
@@ -309,15 +309,11 @@ img {
   }
 }
 
-.item:not(:last-child) {
-  margin-bottom: 52px;
-}
-
 @media screen and (min-width: 768px) {
-  .item:not(:last-child) {
+  .item {
     margin-bottom: 0px;
   }
-  .item:not(:last-child):not(:last-child) {
+  .item:not(:last-child) {
     margin-right: 50px;
   }
 }
@@ -329,17 +325,22 @@ a.font-style {
 .excretion {
   display: block;
   position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #212121;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-bottom: 40px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .excretion {
+    margin-bottom: 0;
+  }
 }
 
 .excretion:hover, .excretion:focus {
@@ -382,9 +383,10 @@ a.font-style {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 0px;
+  margin-top: 60px;
   margin-right: 0px;
   margin-bottom: 0px;
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -392,6 +394,7 @@ a.font-style {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-top: 0;
   }
 }
 
@@ -439,6 +442,7 @@ a.font-style {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 16px;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
