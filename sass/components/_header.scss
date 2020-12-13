@@ -109,16 +109,9 @@
     margin-right: 305px;
   }
 }
-// .list-nav .item:not(:last-child) {
-//   margin-right: 50px;
-// }
-
 .item {
   @media screen and (min-width: 768px) {
     margin-bottom: 0px;
-    //  &:not(:last-child) {
-    //    margin-bottom: 40px;
-    //  }
     &:not(:last-child) {
       margin-right: 50px;
     }
@@ -129,7 +122,7 @@ a.font-style {
   font-family: "Roboto", sans-serif;
 }
 .excretion {
-  display: block;
+  display: inline-block;
   position: relative;
   color: $title-text;
   font-weight: 500;
@@ -224,6 +217,11 @@ a.font-style {
   }
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     font-size: 12px;
+  }
+  @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
+      padding-top: 0;
+    }
   }
 }
 .icon-envelope-hover {

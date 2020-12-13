@@ -324,7 +324,7 @@ a.font-style {
 }
 
 .excretion {
-  display: block;
+  display: inline-block;
   position: relative;
   color: #212121;
   font-weight: 500;
@@ -462,6 +462,12 @@ a.font-style {
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .adress-excretion {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .adress-excretion {
+    padding-top: 0;
   }
 }
 
