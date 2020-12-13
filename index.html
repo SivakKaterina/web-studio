@@ -23,14 +23,14 @@
           >
           <button
             type="button"
-            class="menu-button"
+            class="menu-button is-open"
             data-menu-button
             aria-controls="menu-container"
             aria-expanded="false"
           >
             <svg
-              width="24"
-              height="24"
+              width="40"
+              height="40"
               aria-label="Переключатель мобильного меню"
             >
               <use
@@ -960,6 +960,19 @@
           document.body.classList.toggle("modal-open");
           refs.modal.classList.toggle("is-hidden");
         }
+
+        const menuBtnRef = document.querySelector("[data-menu-button]");
+        const mobileMenuRef = document.querySelector("[data-menu]");
+
+        menuBtnRef.addEventListener("click", () => {
+          const expanded =
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+          menuBtnRef.classList.toggle("is-open");
+          menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+          mobileMenuRef.classList.toggle("is-open");
+        });
       })();
     </script>
   </body>
