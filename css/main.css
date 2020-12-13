@@ -904,14 +904,34 @@ a.font-style {
           justify-content: space-between;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 0;
+  margin-left: -30px;
   padding: 0px;
 }
 
 @media screen and (min-width: 1200px) {
+  .list-company {
+    margin-top: -30px;
+  }
+}
+
+.list-border {
+  margin-left: 30px;
+  -ms-flex-preferred-size: calc(100% / 2 - 30px);
+      flex-basis: calc(100% / 2 - 30px);
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
   .list-border {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-border {
+    -ms-flex-preferred-size: calc(100% / 6 - 30px);
+        flex-basis: calc(100% / 6 - 30px);
   }
 }
 
@@ -925,7 +945,6 @@ a.font-style {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
   height: 90px;
   margin-bottom: 30px;
   border: 1px solid #afb1b8;
