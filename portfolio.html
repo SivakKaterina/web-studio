@@ -16,47 +16,73 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container container-main-nav">
         <nav class="main-nav">
           <a class="logoheder" href="./index.html">
             <span class="weblogo">Web</span>Studio</a
           >
-          <ul class="list-nav">
-            <li class="item">
-              <a class="excretion font-style" href="./index.html">Студия</a>
-            </li>
-            <li class="item">
-              <a class="excretion font-style current" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="item">
-              <a class="excretion font-style" href="">Контакты</a>
-            </li>
-          </ul>
+          <button
+            type="button"
+            class="menu-button is-open"
+            data-menu-button
+            aria-controls="menu-container"
+            aria-expanded="false"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-menu"
+                href="./img-svg/adaptiv-header.svg#icon-menu"
+              ></use>
+              <use
+                class="icon-close-menu"
+                href="./img-svg/adaptiv-header.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-container is-open" id="menu-container" data-menu>
+            <ul class="list-nav">
+              <li class="item">
+                <a class="excretion font-style current" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="item">
+                <a class="excretion font-style" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="item">
+                <a class="excretion font-style" href="">Контакты</a>
+              </li>
+            </ul>
+            <ul class="address-header">
+              <li class="item-address">
+                <a
+                  class="adress-excretion font-style"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="icon-envelope-hover" width="16" height="12">
+                    <use href="./img-svg/symbol-defs2.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item-address">
+                <a class="adress-excretion font-style" href="tel:+380961111111"
+                  ><svg class="icon-smartphone" width="10" height="16">
+                    <use href="./img-svg/symbol-defs2.svg#icon-phone"></use>
+                  </svg>
+                  +380961111111
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <ul class="address-header">
-          <li class="item-address">
-            <a
-              class="adress-excretion font-style"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="icon-envelope-hover" width="16" height="12">
-                <use href="./img-svg/symbol-defs2.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item-address">
-            <a class="adress-excretion font-style" href="tel:+380961111111"
-              ><svg class="icon-smartphone" width="10" height="16">
-                <use href="./img-svg/symbol-defs2.svg#icon-phone"></use>
-              </svg>
-              +380961111111</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -767,5 +793,18 @@
         </div>
       </div>
     </footer>
+    <script>
+      (() => {
+        const menuBtnRef = document.querySelector("[data-menu-button]");
+        const mobileMenuRef = document.querySelector("[data-menu]");
+        menuBtnRef.addEventListener("click", () => {
+          const expanded =
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+          menuBtnRef.classList.toggle("is-open");
+          menuBtnRef.setAttribute("aria-expanded", !expanded);
+          mobileMenuRef.classList.toggle("is-open");
+        });
+      })();
+    </script>
   </body>
 </html>
