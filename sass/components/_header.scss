@@ -24,6 +24,7 @@
     line-height: 1;
   }
 }
+
 .container-main-nav {
   display: flex;
   padding-left: 15px;
@@ -49,6 +50,19 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.icon-menu,
+.icon-close {
+  fill: currentColor;
+}
+.menu-button .icon-close {
+  display: none;
+}
+.menu-button.is-open .icon-close {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 .menu-container {
   background-color: $primary-white-color;
