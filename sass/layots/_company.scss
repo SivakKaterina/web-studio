@@ -15,10 +15,20 @@
   margin-bottom: 0;
   margin-left: 0;
   padding: 0px;
+  //   margin-left: -30px;
+  //   @media screen and (min-width: 1200px) {
+  //     margin-top: -30px;
+  //   }
+}
+.list-border {
+  //   margin-left: 30px;
+  //   flex-basis: calc(100% / 2 - 30px);
+  //   margin-top: 30px;
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
   }
 }
+
 .link-befor {
   display: flex;
   justify-content: center;

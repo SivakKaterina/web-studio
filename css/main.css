@@ -1,6 +1,5 @@
 body {
   font-family: "Roboto", sans-serif;
-  padding-top: 80px;
 }
 
 body.modal-open {
@@ -166,27 +165,21 @@ img {
 }
 
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
   position: relative;
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 768px) {
-  .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
+.container-main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .main-nav {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,15 +196,6 @@ img {
     font-size: 18px;
     line-height: 1;
   }
-}
-
-.container-main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
 }
 
 .menu-button {
@@ -241,6 +225,65 @@ img {
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
+  }
+}
+
+.icon-menu,
+.icon-close {
+  fill: currentColor;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    width: 100%;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -805,7 +848,7 @@ a.font-style {
 }
 
 @media screen and (min-width: 1200px) {
-  .list-company {
+  .list-border {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -1026,7 +1069,7 @@ a.font-style {
 }
 
 .input-footer {
-  max-width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2f303a;
