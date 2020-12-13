@@ -234,11 +234,11 @@ img {
   fill: currentColor;
 }
 
-.menu-button .icon-close {
+.menu-button .icon-close-menu {
   display: none;
 }
 
-.menu-button.is-open .icon-close {
+.menu-button.is-open .icon-close-menu {
   display: block;
 }
 
