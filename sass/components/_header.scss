@@ -67,9 +67,8 @@
 }
 .menu-container {
   background-color: $white;
-
   text-align: center;
-
+  display: none;
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
