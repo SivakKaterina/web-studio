@@ -1,931 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Studio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container container-main-nav">
-        <nav class="main-nav">
-          <a class="logoheder" href="./index.html">
-            <span class="weblogo">Web</span>Studio</a
-          >
-          <button
-            type="button"
-            class="menu-button"
-            data-menu-button
-            aria-label="переключатель мобильного меню"
-            aria-controls="menu-container"
-            aria-expanded="false"
-          >
-            <svg
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                class="icon-close-menu"
-                href="./img-svg/adaptiv-header.svg#icon-close"
-              ></use>
-              <use
-                class="icon-menu"
-                href="./img-svg/adaptiv-header.svg#icon-menu"
-              ></use>
-            </svg>
-          </button>
-          <div class="menu-container" id="menu-container" data-menu>
-            <ul class="list-nav">
-              <li class="item">
-                <a class="excretion font-style current" href="./index.html"
-                  >Studio</a
-                >
-              </li>
-              <li class="item">
-                <a class="excretion font-style" href="./portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="item">
-                <a class="excretion font-style" href="./contact.html">Contacts</a>
-              </li>
-            </ul>
-            <ul class="address-header">
-              <li class="item-address">
-                <a
-                  class="adress-excretion font-style"
-                  href="mailto:info@devstudio.com"
-                >
-                  <svg class="icon-envelope-hover" width="16" height="12">
-                    <use href="./img-svg/symbol-defs2.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="item-address">
-                <a class="adress-excretion font-style" href="tel:+380961111111"
-                  ><svg class="icon-smartphone" width="10" height="16">
-                    <use href="./img-svg/symbol-defs2.svg#icon-phone"></use>
-                  </svg>
-                  +380961111111
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="first-section img-container">
-        <div class="container first-container">
-          <h1 class="font-text-one">Effective Solutions for Your Business
-            </h1>
-          <button data-open-modal class="buttom font-style">
-            Order a service
-          </button>
-        </div>
-      </section>
-      <section class="list-tasks">
-        <div class="container">
-          <ul class="list-container">
-            <li class="list">
-              <div class="block-svg-item">
-                <svg class="list-svg-icon" width="70" height="70">
-                  <use href="./img-svg/icon-defs.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="font-text-three">Attention to Detail</h3>
-              <p class="paragraph">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nesciunt eius fugit in. 
-              </p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container container-main-nav">
+      <nav class="main-nav">
+        <a class="logoheder" href="./index.html">
+          <span class="weblogo">Web</span>Studio</a>
+        <button type="button" class="menu-button" data-menu-button aria-label="переключатель мобильного меню"
+          aria-controls="menu-container" aria-expanded="false">
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-close-menu" href="./img-svg/adaptiv-header.svg#icon-close"></use>
+            <use class="icon-menu" href="./img-svg/adaptiv-header.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="list-nav">
+            <li class="item">
+              <a class="excretion font-style current" href="./index.html">Studio</a>
             </li>
-            <li class="list">
-              <div class="block-svg-item">
-                <svg class="list-svg-icon" width="70" height="70">
-                  <use href="./img-svg/icon-defs.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h3 class="font-text-three">Punctuality</h3>
-              <p class="paragraph">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nesciunt eius fugit in. 
-              </p>
+            <li class="item">
+              <a class="excretion font-style" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="list">
-              <div class="block-svg-item">
-                <svg class="list-svg-icon" width="70" height="70">
-                  <use href="./img-svg/icon-defs.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <h3 class="font-text-three">Planning</h3>
-              <p class="paragraph">
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nesciunt eius fugit in. 
-              </p>
+            <li class="item">
+              <a class="excretion font-style" href="./contact.html">Contacts</a>
             </li>
-            <li class="list">
-              <div class="block-svg-item">
-                <svg class="list-svg-icon" width="70" height="70">
-                  <use href="./img-svg/icon-defs.svg#icon-astronaut"></use>
+          </ul>
+          <ul class="address-header">
+            <li class="item-address">
+              <a class="adress-excretion font-style" href="mailto:info@devstudio.com">
+                <svg class="icon-envelope-hover" width="16" height="12">
+                  <use href="./img-svg/symbol-defs2.svg#icon-envelope"></use>
                 </svg>
-              </div>
-              <h3 class="font-text-three">Modern Technologies</h3>
-              <p class="paragraph">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nesciunt eius fugit in. 
-              </p>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item-address">
+              <a class="adress-excretion font-style" href="tel:+380961111111"><svg class="icon-smartphone" width="10"
+                  height="16">
+                  <use href="./img-svg/symbol-defs2.svg#icon-phone"></use>
+                </svg>
+                +380961111111
+              </a>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="our-work">
-        <div class="container">
-          <h2 class="font-text-two">What We Do</h2>
-          <div class="main-container">
-            <div class="img list-work">
-              <img src="./img/img.png" alt="" width="370" />
-              <div class="overlay">
-                <p class="our-work-description">Desktop Applications</p>
-              </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="first-section img-container">
+      <div class="container first-container">
+        <h1 class="font-text-one">Effective Solutions for Your Business
+        </h1>
+        <button data-open-modal class="buttom font-style">
+          Order a service
+        </button>
+      </div>
+    </section>
+    <section class="list-tasks">
+      <div class="container">
+        <ul class="list-container">
+          <li class="list">
+            <div class="block-svg-item">
+              <svg class="list-svg-icon" width="70" height="70">
+                <use href="./img-svg/icon-defs.svg#icon-antenna"></use>
+              </svg>
             </div>
-            <div class="img list-work">
-              <img src="./img/img2.png" alt="" width="370" />
-              <div class="overlay">
-                <p class="our-work-description">Mobile Applications</p>
-              </div>
+            <h3 class="font-text-three">Attention to Detail</h3>
+            <p class="paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nesciunt eius fugit in.
+            </p>
+          </li>
+          <li class="list">
+            <div class="block-svg-item">
+              <svg class="list-svg-icon" width="70" height="70">
+                <use href="./img-svg/icon-defs.svg#icon-clock"></use>
+              </svg>
             </div>
-            <div class="img list-work">
-              <img src="./img/img3.png" alt="" width="370" />
-              <div class="overlay">
-                <p class="our-work-description">Design Solutions</p>
-              </div>
+            <h3 class="font-text-three">Punctuality</h3>
+            <p class="paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nesciunt eius fugit in.
+            </p>
+          </li>
+          <li class="list">
+            <div class="block-svg-item">
+              <svg class="list-svg-icon" width="70" height="70">
+                <use href="./img-svg/icon-defs.svg#icon-diagram"></use>
+              </svg>
+            </div>
+            <h3 class="font-text-three">Planning</h3>
+            <p class="paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nesciunt eius fugit in.
+            </p>
+          </li>
+          <li class="list">
+            <div class="block-svg-item">
+              <svg class="list-svg-icon" width="70" height="70">
+                <use href="./img-svg/icon-defs.svg#icon-astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="font-text-three">Modern Technologies</h3>
+            <p class="paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nesciunt eius fugit in.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="our-work">
+      <div class="container">
+        <h2 class="font-text-two">What We Do</h2>
+        <div class="main-container">
+          <div class="img list-work">
+            <img src="./img/img.png" alt="" width="370" />
+            <div class="overlay">
+              <p class="our-work-description">Desktop Applications</p>
+            </div>
+          </div>
+          <div class="img list-work">
+            <img src="./img/img2.png" alt="" width="370" />
+            <div class="overlay">
+              <p class="our-work-description">Mobile Applications</p>
+            </div>
+          </div>
+          <div class="img list-work">
+            <img src="./img/img3.png" alt="" width="370" />
+            <div class="overlay">
+              <p class="our-work-description">Design Solutions</p>
             </div>
           </div>
         </div>
-      </section>
-      <section class="our-team">
-        <div class="container">
-          <h2 class="font-text-two">Our Team</h2>
-          <ul class="main-container-team">
-            <li class="our-team-list">
-              <picture>
-                <source
-                  srcset="
+      </div>
+    </section>
+    <section class="our-team">
+      <div class="container">
+        <h2 class="font-text-two">Our Team</h2>
+        <ul class="main-container-team">
+          <li class="our-team-list">
+            <picture>
+              <source srcset="
                     ./img/comand/desktop/igor-270.webp    1x,
                     ./img/comand/desktop/igor-270-2x.webp 2x,
                     ./img/comand/desktop/igor-270-3x.webp 3x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
+                  " media="(min-width: 1200px)" type="image/webp" />
+              <source srcset="
                     ./img/comand/tablet/igor-354.webp    1x,
                     ./img/comand/tablet/igor-354-2x.webp 2x,
                     ./img/comand/tablet/igor-354-3x.webp 3x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
+                  " media="(min-width: 768px)" type="image/webp" />
+              <source srcset="
                     ./img/comand/mob/igor-480.webp    1x,
                     ./img/comand/mob/igor-480-2x.webp 2x,
                     ./img/comand/mob/igor-480-3x.webp 3x
-                  "
-                  media="(min-width: 480px)"
-                  type="image/webp"
-                />
-
-                <source
-                  srcset="
+                  " media="(min-width: 480px)" type="image/webp" />
+              <source srcset="
                     ./img/comand/desktop/igor-270.jpg    1x,
                     ./img/comand/desktop/igor-270-2x.jpg 2x,
                     ./img/comand/desktop/igor-270-3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
+                  " media="(min-width: 1200px)" />
+              <source srcset="
                     ./img/comand/tablet/igor-354.jpg    1x,
                     ./img/comand/tablet/igor-354-2x.jpg 2x,
                     ./img/comand/tablet/igor-354-3x.jpg 3x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
+                  " media="(min-width: 768px)" />
+              <source srcset="
                     ./img/comand/mob/igor-480.jpg    1x,
                     ./img/comand/mob/igor-480-2x.jpg 2x,
                     ./img/comand/mob/igor-480-3x.jpg 3x
-                  "
-                  media="(min-width: 480px)"
-                />
-
-                <img
-                  src="./img/photo1.jpg"
-                  alt="Foto Igor Demyanenko"
-                  width="450"
-                />
-              </picture>
-              <h3 class="font-text-three-comand">Igor Demyanenko
-              </h3>
-              <p class="paragraph-comand">Product Designer</p>
-              <ul class="social-links-list">
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Instagramm"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#instagram"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Twitter"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#twitter"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Facebook"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#facebook"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Linkedin"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#linkedin"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="our-team-list">
-              <picture>
-                <source
-                  srcset="
-                    ./img/comand/desktop/olga-270.webp    1x,
-                    ./img/comand/desktop/olga-270-2x.webp 2x,
-                    ./img/comand/desktop/olga-270-3x.webp 3x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./img/comand/tablet/olga-354.webp    1x,
-                    ./img/comand/tablet/olga-354-2x.webp 2x,
-                    ./img/comand/tablet/olga-354-3x.webp 3x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./img/comand/mob/olga-480.webp    1x,
-                    ./img/comand/mob/olga-480-2x.webp 2x,
-                    ./img/comand/mob/olga-480-3x.webp 3x
-                  "
-                  media="(min-width: 480px)"
-                  type="image/webp"
-                />
-
-                <source
-                  srcset="
-                    ./img/comand/desktop/olga-270.jpg    1x,
-                    ./img/comand/desktop/olga-270-2x.jpg 2x,
-                    ./img/comand/desktop/olga-270-3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./img/comand/tablet/olga-354.jpg    1x,
-                    ./img/comand/tablet/olga-354-2x.jpg 2x,
-                    ./img/comand/tablet/olga-354-3x.jpg 3x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./img/comand/mob/olga-480.jpg    1x,
-                    ./img/comand/mob/olga-480-2x.jpg 2x,
-                    ./img/comand/mob/olga-480-3x.jpg 3x
-                  "
-                  media="(min-width: 480px)"
-                />
-                <img
-                  src="./img/photo2.jpg"
-                  alt="Foto Olga Repina"
-                  width="450"
-                />
-              </picture>
-
-              <h3 class="font-text-three-comand">Olga Repina</h3>
-              <p class="paragraph-comand">Frontend Developer</p>
-              <ul class="social-links-list">
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Instagramm"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#instagram"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Twitter"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#twitter"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Facebook"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#facebook"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Linkedin"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#linkedin"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="our-team-list">
-              <picture>
-                <source
-                  srcset="
-                    ./img/comand/desktop/nikolay-270.webp    1x,
-                    ./img/comand/desktop/nikolay-270-2x.webp 2x,
-                    ./img/comand/desktop/nikolay-270-3x.webp 3x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./img/comand/tablet/nikolay-354.webp    1x,
-                    ./img/comand/tablet/nikolay-354-2x.webp 2x,
-                    ./img/comand/tablet/nikolay-354-3x.webp 3x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./img/comand/mob/nikolay-480.webp    1x,
-                    ./img/comand/mob/nikolay-480-2x.webp 2x,
-                    ./img/comand/mob/nikolay-480-3x.webp 3x
-                  "
-                  media="(min-width: 480px)"
-                  type="image/webp"
-                />
-
-                <source
-                  srcset="
-                    ./img/comand/desktop/nikolay-270.jpg    1x,
-                    ./img/comand/desktop/nikolay-270-2x.jpg 2x,
-                    ./img/comand/desktop/nikolay-270-3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./img/comand/tablet/nikolay-354.jpg    1x,
-                    ./img/comand/tablet/nikolay-354-2x.jpg 2x,
-                    ./img/comand/tablet/nikolay-354-3x.jpg 3x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./img/comand/mob/nikolay-480.jpg    1x,
-                    ./img/comand/mob/nikolay-480-2x.jpg 2x,
-                    ./img/comand/mob/nikolay-480-3x.jpg 3x
-                  "
-                  media="(min-width: 480px)"
-                />
-                <img
-                  src="./img/ph.jpg"
-                  alt="Фото Николая Тарасова"
-                  width="450"
-                />
-              </picture>
-              <h3 class="font-text-three-comand">Nikolai Tarasov</h3>
-              <p class="paragraph-comand">Marketing</p>
-              <ul class="social-links-list">
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Instagramm"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#instagram"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Twitter"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#twitter"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Facebook"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#facebook"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Linkedin"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#linkedin"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="our-team-list">
-              <picture>
-                <source
-                  srcset="
-                    ./img/comand/desktop/mihail-270.webp    1x,
-                    ./img/comand/desktop/mihail-270-2x.webp 2x,
-                    ./img/comand/desktop/mihail-270-3x.webp 3x
-                  "
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./img/comand/tablet/mihail-354.webp    1x,
-                    ./img/comand/tablet/mihail-354-2x.webp 2x,
-                    ./img/comand/tablet/mihail-354-3x.webp 3x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./img/comand/mob/mihail-480.webp    1x,
-                    ./img/comand/mob/mihail-480-2x.webp 2x,
-                    ./img/comand/mob/mihail-480-3x.webp 3x
-                  "
-                  media="(min-width: 480px)"
-                  type="image/webp"
-                />
-
-                <source
-                  srcset="
-                    ./img/comand/desktop/mihail-270.jpg    1x,
-                    ./img/comand/desktop/mihail-270-2x.jpg 2x,
-                    ./img/comand/desktop/mihail-270-3x.jpg 3x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ./img/comand/tablet/mihail-354.jpg    1x,
-                    ./img/comand/tablet/mihail-354-2x.jpg 2x,
-                    ./img/comand/tablet/mihail-354-3x.jpg 3x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./img/comand/mob/mihail-480.jpg    1x,
-                    ./img/comand/mob/mihail-480-2x.jpg 2x,
-                    ./img/comand/mob/mihail-480-3x.jpg 3x
-                  "
-                  media="(min-width: 480px)"
-                />
-                <img
-                  src="./img/photo4.jpg"
-                  alt="Foto Mikhail Ermakov"
-                  width="450"
-                />
-              </picture>
-
-              <h3 class="font-text-three-comand">Mikhail Ermakov</h3>
-              <p class="paragraph-comand">UI Designer</p>
-              <ul class="social-links-list">
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Instagramm"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#instagram"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Twitter"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#twitter"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Facebook"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#facebook"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-links">
-                  <a
-                    class="social-icons-link"
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferer"
-                    aria-label="Linkedin"
-                  >
-                    <svg class="our-team-svg">
-                      <use
-                        class="our-team-svg-use"
-                        href="./img-svg/optsymbol-defs.svg#linkedin"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="company">
-        <div class="container">
-          <h2 class="font-text-two">Regular Clients</h2>
-          <ul class="list-company">
-            <li class="list-border">
-              <a href="#" class="link-befor">
-                <svg class="svg-logo" width="44.27" height="49.23">
-                  <use href="./img-svg/optsymbol-defs1.svg#icon-logo-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list-border">
-              <a href="#" class="link-befor">
-                <svg class="svg-logo" width="40" height="52">
-                  <use href="./img-svg/optsymbol-defs1.svg#icon-logo-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list-border">
-              <a href="#" class="link-befor">
-                <svg class="svg-logo" width="41" height="42.6">
-                  <use href="./img-svg/optsymbol-defs1.svg#icon-logo-3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list-border">
-              <a href="#" class="link-befor">
-                <svg class="svg-logo" width="79.66" height="42.02">
-                  <use href="./img-svg/optsymbol-defs1.svg#icon-logo-4"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list-border">
-              <a href="#" class="link-befor">
-                <svg class="svg-logo" width="59" height="47">
-                  <use href="./img-svg/optsymbol-defs1.svg#icon-logo-5"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list-border">
-              <a href="#" class="link-befor">
-                <svg class="svg-logo" width="88.48" height="45.44">
-                  <use href="./img-svg/optsymbol-defs1.svg#icon-logo-6"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="container footer">
-        <div class="footer-section">
-          <div class="footer-adress">
-            <div>
-              <a class="logofooter" href="./index.html">
-                <span class="weblogo">Web</span>Studio</a
-              >
-            </div>
-            <div>
-              <address class="address">
-                <ul class="footer-list">
-                  <li class="adress-footerone">
-                    Kyiv, Lesya Ukrainka Ave., 26
-                  </li>
-                  <li>
-                    <a href="tel:+380961111111" class="adress-footer font-style"
-                      >+380961111111</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:info@devstudio.com"
-                      class="adress-footer font-style"
-                      >info@devstudio.com</a
-                    >
-                  </li>
-                </ul>
-              </address>
-            </div>
-          </div>
-          <div class="offers">
-            <h3 class="offers-title">Join Us</h3>
-            <ul class="offers-list">
-              <li class="social-footer-links">
-                <a
-                  class="footer-icons-link"
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferer"
-                  aria-label="Instagramm"
-                >
-                  <svg class="footer-svg">
-                    <use
-                      class="footer-svg-use"
-                      href="./img-svg/optsymbol-defs.svg#instagram"
-                    ></use>
+                  " media="(min-width: 480px)" />
+              <img src="./img/photo1.jpg" alt="Foto Igor Demyanenko" width="450" />
+            </picture>
+            <h3 class="font-text-three-comand">Igor Demyanenko
+            </h3>
+            <p class="paragraph-comand">Product Designer</p>
+            <ul class="social-links-list">
+              <li class="social-links">
+                <a class="social-icons-link" href="https://instagram.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Instagramm">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-footer-links">
-                <a
-                  class="footer-icons-link"
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferer"
-                  aria-label="Twitter"
-                >
-                  <svg class="footer-svg">
-                    <use
-                      class="footer-svg-use"
-                      href="./img-svg/optsymbol-defs.svg#twitter"
-                    ></use>
+              <li class="social-links">
+                <a class="social-icons-link" href="https://twitter.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Twitter">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-footer-links">
-                <a
-                  class="footer-icons-link"
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferer"
-                  aria-label="Facebook"
-                >
-                  <svg class="footer-svg">
-                    <use
-                      class="footer-svg-use"
-                      href="./img-svg/optsymbol-defs.svg#facebook"
-                    ></use>
+              <li class="social-links">
+                <a class="social-icons-link" href="https://facebook.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Facebook">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-footer-links">
-                <a
-                  class="footer-icons-link"
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferer"
-                  aria-label="Linkedin"
-                >
-                  <svg class="footer-svg">
-                    <use
-                      class="footer-svg-use"
-                      href="./img-svg/optsymbol-defs.svg#linkedin"
-                    ></use>
+              <li class="social-links">
+                <a class="social-icons-link" href="https://linkedin.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Linkedin">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#linkedin"></use>
                   </svg>
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="our-team-list">
+            <picture>
+              <source srcset="
+                    ./img/comand/desktop/olga-270.webp    1x,
+                    ./img/comand/desktop/olga-270-2x.webp 2x,
+                    ./img/comand/desktop/olga-270-3x.webp 3x
+                  " media="(min-width: 1200px)" type="image/webp" />
+              <source srcset="
+                    ./img/comand/tablet/olga-354.webp    1x,
+                    ./img/comand/tablet/olga-354-2x.webp 2x,
+                    ./img/comand/tablet/olga-354-3x.webp 3x
+                  " media="(min-width: 768px)" type="image/webp" />
+              <source srcset="
+                    ./img/comand/mob/olga-480.webp    1x,
+                    ./img/comand/mob/olga-480-2x.webp 2x,
+                    ./img/comand/mob/olga-480-3x.webp 3x
+                  " media="(min-width: 480px)" type="image/webp" />
+
+              <source srcset="
+                    ./img/comand/desktop/olga-270.jpg    1x,
+                    ./img/comand/desktop/olga-270-2x.jpg 2x,
+                    ./img/comand/desktop/olga-270-3x.jpg 3x
+                  " media="(min-width: 1200px)" />
+              <source srcset="
+                    ./img/comand/tablet/olga-354.jpg    1x,
+                    ./img/comand/tablet/olga-354-2x.jpg 2x,
+                    ./img/comand/tablet/olga-354-3x.jpg 3x
+                  " media="(min-width: 768px)" />
+              <source srcset="
+                    ./img/comand/mob/olga-480.jpg    1x,
+                    ./img/comand/mob/olga-480-2x.jpg 2x,
+                    ./img/comand/mob/olga-480-3x.jpg 3x
+                  " media="(min-width: 480px)" />
+              <img src="./img/photo2.jpg" alt="Foto Olga Repina" width="450" />
+            </picture>
+
+            <h3 class="font-text-three-comand">Olga Repina</h3>
+            <p class="paragraph-comand">Frontend Developer</p>
+            <ul class="social-links-list">
+              <li class="social-links">
+                <a class="social-icons-link" href="https://instagram.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Instagramm">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links">
+                <a class="social-icons-link" href="https://twitter.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Twitter">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links">
+                <a class="social-icons-link" href="https://facebook.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Facebook">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links">
+                <a class="social-icons-link" href="https://linkedin.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Linkedin">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="our-team-list">
+            <picture>
+              <source srcset="
+                    ./img/comand/desktop/nikolay-270.webp    1x,
+                    ./img/comand/desktop/nikolay-270-2x.webp 2x,
+                    ./img/comand/desktop/nikolay-270-3x.webp 3x
+                  " media="(min-width: 1200px)" type="image/webp" />
+              <source srcset="
+                    ./img/comand/tablet/nikolay-354.webp    1x,
+                    ./img/comand/tablet/nikolay-354-2x.webp 2x,
+                    ./img/comand/tablet/nikolay-354-3x.webp 3x
+                  " media="(min-width: 768px)" type="image/webp" />
+              <source srcset="
+                    ./img/comand/mob/nikolay-480.webp    1x,
+                    ./img/comand/mob/nikolay-480-2x.webp 2x,
+                    ./img/comand/mob/nikolay-480-3x.webp 3x
+                  " media="(min-width: 480px)" type="image/webp" />
+
+              <source srcset="
+                    ./img/comand/desktop/nikolay-270.jpg    1x,
+                    ./img/comand/desktop/nikolay-270-2x.jpg 2x,
+                    ./img/comand/desktop/nikolay-270-3x.jpg 3x
+                  " media="(min-width: 1200px)" />
+              <source srcset="
+                    ./img/comand/tablet/nikolay-354.jpg    1x,
+                    ./img/comand/tablet/nikolay-354-2x.jpg 2x,
+                    ./img/comand/tablet/nikolay-354-3x.jpg 3x
+                  " media="(min-width: 768px)" />
+              <source srcset="
+                    ./img/comand/mob/nikolay-480.jpg    1x,
+                    ./img/comand/mob/nikolay-480-2x.jpg 2x,
+                    ./img/comand/mob/nikolay-480-3x.jpg 3x
+                  " media="(min-width: 480px)" />
+              <img src="./img/ph.jpg" alt="Фото Николая Тарасова" width="450" />
+            </picture>
+            <h3 class="font-text-three-comand">Nikolai Tarasov</h3>
+            <p class="paragraph-comand">Marketing</p>
+            <ul class="social-links-list">
+              <li class="social-links">
+                <a class="social-icons-link" href="https://instagram.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Instagramm">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links">
+                <a class="social-icons-link" href="https://twitter.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Twitter">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links">
+                <a class="social-icons-link" href="https://facebook.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Facebook">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links">
+                <a class="social-icons-link" href="https://linkedin.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Linkedin">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="our-team-list">
+            <picture>
+              <source srcset="
+                    ./img/comand/desktop/mihail-270.webp    1x,
+                    ./img/comand/desktop/mihail-270-2x.webp 2x,
+                    ./img/comand/desktop/mihail-270-3x.webp 3x
+                  " media="(min-width: 1200px)" type="image/webp" />
+              <source srcset="
+                    ./img/comand/tablet/mihail-354.webp    1x,
+                    ./img/comand/tablet/mihail-354-2x.webp 2x,
+                    ./img/comand/tablet/mihail-354-3x.webp 3x
+                  " media="(min-width: 768px)" type="image/webp" />
+              <source srcset="
+                    ./img/comand/mob/mihail-480.webp    1x,
+                    ./img/comand/mob/mihail-480-2x.webp 2x,
+                    ./img/comand/mob/mihail-480-3x.webp 3x
+                  " media="(min-width: 480px)" type="image/webp" />
+
+              <source srcset="
+                    ./img/comand/desktop/mihail-270.jpg    1x,
+                    ./img/comand/desktop/mihail-270-2x.jpg 2x,
+                    ./img/comand/desktop/mihail-270-3x.jpg 3x
+                  " media="(min-width: 1200px)" />
+              <source srcset="
+                    ./img/comand/tablet/mihail-354.jpg    1x,
+                    ./img/comand/tablet/mihail-354-2x.jpg 2x,
+                    ./img/comand/tablet/mihail-354-3x.jpg 3x
+                  " media="(min-width: 768px)" />
+              <source srcset="
+                    ./img/comand/mob/mihail-480.jpg    1x,
+                    ./img/comand/mob/mihail-480-2x.jpg 2x,
+                    ./img/comand/mob/mihail-480-3x.jpg 3x
+                  " media="(min-width: 480px)" />
+              <img src="./img/photo4.jpg" alt="Foto Mikhail Ermakov" width="450" />
+            </picture>
+
+            <h3 class="font-text-three-comand">Mikhail Ermakov</h3>
+            <p class="paragraph-comand">UI Designer</p>
+            <ul class="social-links-list">
+              <li class="social-links">
+                <a class="social-icons-link" href="https://instagram.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Instagramm">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links">
+                <a class="social-icons-link" href="https://twitter.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Twitter">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links">
+                <a class="social-icons-link" href="https://facebook.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Facebook">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links">
+                <a class="social-icons-link" href="https://linkedin.com" target="_blank" rel="noopener noreferer"
+                  aria-label="Linkedin">
+                  <svg class="our-team-svg">
+                    <use class="our-team-svg-use" href="./img-svg/optsymbol-defs.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="company">
+      <div class="container">
+        <h2 class="font-text-two">Regular Clients</h2>
+        <ul class="list-company">
+          <li class="list-border">
+            <a href="#" class="link-befor">
+              <svg class="svg-logo" width="44.27" height="49.23">
+                <use href="./img-svg/optsymbol-defs1.svg#icon-logo-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-border">
+            <a href="#" class="link-befor">
+              <svg class="svg-logo" width="40" height="52">
+                <use href="./img-svg/optsymbol-defs1.svg#icon-logo-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-border">
+            <a href="#" class="link-befor">
+              <svg class="svg-logo" width="41" height="42.6">
+                <use href="./img-svg/optsymbol-defs1.svg#icon-logo-3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-border">
+            <a href="#" class="link-befor">
+              <svg class="svg-logo" width="79.66" height="42.02">
+                <use href="./img-svg/optsymbol-defs1.svg#icon-logo-4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-border">
+            <a href="#" class="link-befor">
+              <svg class="svg-logo" width="59" height="47">
+                <use href="./img-svg/optsymbol-defs1.svg#icon-logo-5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-border">
+            <a href="#" class="link-befor">
+              <svg class="svg-logo" width="88.48" height="45.44">
+                <use href="./img-svg/optsymbol-defs1.svg#icon-logo-6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer">
+      <div class="footer-section">
+        <div class="footer-adress">
+          <div>
+            <a class="logofooter" href="./index.html">
+              <span class="weblogo">Web</span>Studio</a>
+          </div>
+          <div>
+            <address class="address">
+              <ul class="footer-list">
+                <li class="adress-footerone">
+                  Kyiv, Lesya Ukrainka Ave., 26
+                </li>
+                <li>
+                  <a href="tel:+380961111111" class="adress-footer font-style">+380961111111</a>
+                </li>
+                <li>
+                  <a href="mailto:info@devstudio.com" class="adress-footer font-style">info@devstudio.com</a>
+                </li>
+              </ul>
+            </address>
           </div>
         </div>
-        <div class="footer-container">
-          <h3 class="offers-title">Subscribe to the Newsletter</h3>
-          <div class="wrap-form">
-            <form action="#" class="form-footer">
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                class="input-footer"
-              />
-            </form>
-            <button class="button-footer">Subscribe</button>
-          </div>
+        <div class="offers">
+          <h3 class="offers-title">Join Us</h3>
+          <ul class="offers-list">
+            <li class="social-footer-links">
+              <a class="footer-icons-link" href="https://instagram.com" target="_blank" rel="noopener noreferer"
+                aria-label="Instagramm">
+                <svg class="footer-svg">
+                  <use class="footer-svg-use" href="./img-svg/optsymbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer-links">
+              <a class="footer-icons-link" href="https://twitter.com" target="_blank" rel="noopener noreferer"
+                aria-label="Twitter">
+                <svg class="footer-svg">
+                  <use class="footer-svg-use" href="./img-svg/optsymbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer-links">
+              <a class="footer-icons-link" href="https://facebook.com" target="_blank" rel="noopener noreferer"
+                aria-label="Facebook">
+                <svg class="footer-svg">
+                  <use class="footer-svg-use" href="./img-svg/optsymbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer-links">
+              <a class="footer-icons-link" href="https://linkedin.com" target="_blank" rel="noopener noreferer"
+                aria-label="Linkedin">
+                <svg class="footer-svg">
+                  <use class="footer-svg-use" href="./img-svg/optsymbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-backdrop>
-      <div class="modal">
-        <button data-close-modal class="button-backdrop">
-          <svg class="svg-button-backdrop" width="30" height="30">
-            <use
-              class="svg-button-backdrop-modal"
-              href="./img-svg/close.svg#icon-close"
-            ></use>
-          </svg>
-        </button>
-        <div class="block-form">
-          <b class="title-modal">Leave your details, and we will call you back.</b>
-          <form action="#" class="form">
-            <div class="section-name">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="input-name"
-                placeholder=" "
-              />
-              <label for="name" class="label-name">Name</label>
-              <svg class="icon-name" width="18" height="18">
-                <use href="./img-input-icon/icon-form.svg#icon-person"></use>
-              </svg>
-            </div>
-            <div class="section-tel">
-              <input
-                type="tel"
-                name="telephone"
-                id="tel"
-                class="input-tel"
-                placeholder=" "
-              />
-              <label for="tel" class="label-tel">Phone</label>
-              <svg class="icon-name" width="18" height="18">
-                <use href="./img-input-icon/icon-form.svg#icon-phone"></use>
-              </svg>
-            </div>
-            <div class="section-email">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="input-email"
-                placeholder=" "
-              />
-              <label for="email" class="label-email">Email</label>
-              <svg class="icon-name" width="18" height="18">
-                <use href="./img-input-icon/icon-form.svg#icon-email"></use>
-              </svg>
-            </div>
-            <label for="comment" class="label-comment">Comment</label>
-            <textarea
-              name="comment"
-              cols="45"
-              rows="5"
-              class="textarea"
-              id="comment"
-              placeholder="Enter text"
-            ></textarea>
-            <!-- <label class="section-checkbox">
+      <div class="footer-container">
+        <h3 class="offers-title">Subscribe to the Newsletter</h3>
+        <div class="wrap-form">
+          <form action="#" class="form-footer">
+            <input type="email" name="email" placeholder="E-mail" class="input-footer" />
+          </form>
+          <button class="button-footer">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="backdrop is-hidden" data-backdrop>
+    <div class="modal">
+      <button data-close-modal class="button-backdrop">
+        <svg class="svg-button-backdrop" width="30" height="30">
+          <use class="svg-button-backdrop-modal" href="./img-svg/close.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="block-form">
+        <b class="title-modal">Leave your details, and we will call you back.</b>
+        <form action="#" class="form">
+          <div class="section-name">
+            <input type="text" name="name" id="name" class="input-name" placeholder=" " />
+            <label for="name" class="label-name">Name</label>
+            <svg class="icon-name" width="18" height="18">
+              <use href="./img-input-icon/icon-form.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="section-tel">
+            <input type="tel" name="telephone" id="tel" class="input-tel" placeholder=" " />
+            <label for="tel" class="label-tel">Phone</label>
+            <svg class="icon-name" width="18" height="18">
+              <use href="./img-input-icon/icon-form.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="section-email">
+            <input type="email" name="email" id="email" class="input-email" placeholder=" " />
+            <label for="email" class="label-email">Email</label>
+            <svg class="icon-name" width="18" height="18">
+              <use href="./img-input-icon/icon-form.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label for="comment" class="label-comment">Comment</label>
+          <textarea name="comment" cols="45" rows="5" class="textarea" id="comment" placeholder="Enter text"></textarea>
+          <!-- <label class="section-checkbox">
               <input type="checkbox" class="input-checkbox" name="greement" />
               <span class="icon"></span>
               Соглашаюсь с рассылкой и принимаю &nbsp;<a
@@ -934,55 +606,54 @@
                 >Условия договора</a
               >
             </label> -->
-            <div class="policy-centr">
-              <label class="section-checkbox">
-                <input type="checkbox" name="greement" class="input-checkbox" />
-                <span class="icon"></span>
-                <span class="policy-description"
-                  >I agree to the newsletter and accept
-                  <a class="link-modal" href="#">Terms of the Contract</a></span
-                >
-              </label>
-            </div>
-          </form>
-          <div class="button-form">
-            <button class="button-form-modal">Send</button>
+          <div class="policy-centr">
+            <label class="section-checkbox">
+              <input type="checkbox" name="greement" class="input-checkbox" />
+              <span class="icon"></span>
+              <span class="policy-description">I agree to the newsletter and accept
+                <a class="link-modal" href="#">Terms of the Contract</a></span>
+            </label>
           </div>
+        </form>
+        <div class="button-form">
+          <button class="button-form-modal">Send</button>
         </div>
       </div>
     </div>
-    <script>
-      (() => {
-        const refs = {
-          openModalBtn: document.querySelector("[data-open-modal]"),
-          closeModalBtn: document.querySelector("[data-close-modal]"),
-          modal: document.querySelector("[data-backdrop]"),
-        };
+  </div>
+  <script>
+    (() => {
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        modal: document.querySelector("[data-backdrop]"),
+      };
 
-        refs.openModalBtn.addEventListener("click", toggleModal);
-        refs.closeModalBtn.addEventListener("click", toggleModal);
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
 
-        function toggleModal() {
-          refs.modal.classList.toggle("is-hidden");
-        }
-        function toggleModal() {
-          document.body.classList.toggle("modal-open");
-          refs.modal.classList.toggle("is-hidden");
-        }
+      function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+      }
+      function toggleModal() {
+        document.body.classList.toggle("modal-open");
+        refs.modal.classList.toggle("is-hidden");
+      }
 
-        const menuBtnRef = document.querySelector("[data-menu-button]");
-        const mobileMenuRef = document.querySelector("[data-menu]");
+      const menuBtnRef = document.querySelector("[data-menu-button]");
+      const mobileMenuRef = document.querySelector("[data-menu]");
 
-        menuBtnRef.addEventListener("click", () => {
-          const expanded =
-            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+      menuBtnRef.addEventListener("click", () => {
+        const expanded =
+          menuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
-          menuBtnRef.classList.toggle("is-open");
-          menuBtnRef.setAttribute("aria-expanded", !expanded);
+        menuBtnRef.classList.toggle("is-open");
+        menuBtnRef.setAttribute("aria-expanded", !expanded);
 
-          mobileMenuRef.classList.toggle("is-open");
-        });
-      })();
-    </script>
-  </body>
+        mobileMenuRef.classList.toggle("is-open");
+      });
+    })();
+  </script>
+</body>
+
 </html>
